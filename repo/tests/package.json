@@ -1,0 +1,12 @@
+{
+  "name": "todo-smoke-tests",
+  "version": "1.0.0",
+  "description": "Smoke tests for Todo Realtime application",
+  "main": "smoke.js",
+  "dependencies": {
+    "ws": "^8.16.0"
+  },
+  "scripts": {
+    "test": "node smoke.js"
+  }
+}

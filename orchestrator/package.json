@@ -1,0 +1,21 @@
+{
+  "name": "todo-orchestrator",
+  "version": "1.0.0",
+  "description": "LangGraph.js orchestrator for Todo Realtime autonomous build",
+  "main": "graph.ts",
+  "scripts": {
+    "start": "ts-node graph.ts",
+    "build": "tsc",
+    "dev": "ts-node --watch graph.ts"
+  },
+  "dependencies": {
+    "@langchain/anthropic": "^0.2.0",
+    "@langchain/core": "^0.2.0",
+    "langgraph": "^0.0.26",
+    "typescript": "^5.2.2",
+    "ts-node": "^10.9.1"
+  },
+  "devDependencies": {
+    "@types/node": "^20.8.0"
+  }
+}

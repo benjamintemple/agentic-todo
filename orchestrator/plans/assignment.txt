@@ -1,0 +1,19 @@
+Build a simple To-Do application with real-time sync.
+
+Backend (ASP.NET Core and GraphQL):
+- Define Task { id, title, description, status }
+- Mutations: createTask, updateTaskStatus
+- Query: getAllTasks
+- Real-time: Subscription taskChanged
+- Use Entity Framework Core with SQLite for persistence
+
+Frontend (React):
+- Use Adobe React Spectrum to add tasks and toggle status (Pending or Completed)
+- Fetch and display via GraphQL, prefer Relay client
+
+Dockerization:
+- Dockerize backend and frontend; compose orchestrates both
+
+Meta:
+- Use agentic automation to generate everything end-to-end, then run tests
+- Output a working repo, passing tests, an optional short demo video, and a final report

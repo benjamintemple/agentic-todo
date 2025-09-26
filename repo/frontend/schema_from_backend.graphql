@@ -1,0 +1,38 @@
+type Query {
+  allTasks: [TaskItem!]!
+}
+
+type Mutation {
+  createTask(input: CreateTaskInput!): TaskItem!
+  updateTaskStatus(input: UpdateTaskStatusInput!): TaskItem!
+}
+
+type Subscription {
+  taskChanged: TaskItem!
+}
+
+input UpdateTaskStatusInput {
+  id: Int!
+  status: TaskStatus!
+}
+
+input CreateTaskInput {
+  title: String!
+  description: String!
+}
+
+type TaskItem {
+  id: Int!
+  title: String!
+  description: String!
+  status: TaskStatus!
+  createdAt: DateTime!
+}
+
+enum TaskStatus {
+  PENDING
+  COMPLETED
+}
+
+"""The `DateTime` scalar represents an ISO-8601 compliant date time type."""
+scalar DateTime
